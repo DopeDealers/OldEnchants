@@ -44,9 +44,7 @@ public class EnchantListener implements Listener {
     }
     @EventHandler
     public void openInventoryEvent(InventoryOpenEvent e) {
-        if (e.getInventory() instanceof EnchantingInventory && (
-                e.getPlayer().hasPermission("autolapis.autofill") ||
-                        e.getPlayer().isOp() || e.getPlayer().hasPermission("*"))) {
+        if (e.getInventory() instanceof EnchantingInventory) {
             e.getInventory().setItem(1, this.lapis);
             this.plugin.inventories.add((EnchantingInventory)e
                     .getInventory());
