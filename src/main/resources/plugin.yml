@@ -1,0 +1,6 @@
+name: OldEnchants
+version: '${project.version}'
+main: org.cyci.mc.oldenchants.OldEnchants
+api-version: 1.13
+authors: [ Prisk ]
+description: Plugin for emenbee
